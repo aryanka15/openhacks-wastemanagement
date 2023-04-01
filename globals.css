@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-item {
+  @apply flex p-10 border-2 border-sky-800 rounded-xl flex-row items-center bg-sky-600 bg-opacity-60;
+}
+
+.list-button {
+  @apply hover:bg-sky-800 hover:border-sky-800 p-8 transition;
+}

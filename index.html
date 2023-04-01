@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trash Can Companion</title>
+    <link rel="stylesheet" href="./dist/global-tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      integrity="sha384-0JQY2qzgG0hYfz3nZmKbKt/We7fFUMOeQFAWo8Yg/q8X+Ytst4yBoq+76PVCmYl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="flex flex-col md:space-x-20 md:px-10 md:flex-row justify-center items-center bg-sky-300 md:h-screen"
+      id="displayDiv"
+    >
+      <div
+        class="flex flex-col p-20 space-y-5 md:bg-sky-500 md:bg-opacity-70 md:border-4 md:border-sky-600 md:rounded-2xl justify-center"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold">Trash Can Companion</h1>
+        <p class="text-2xl font-semibold">A tool to help you identify trash</p>
+      </div>
+
+      <div class="flex flex-col h-full items-center justify-center">
+        <ol class="list-inside text-2xl mb-10 space-y-20 font-semibold">
+          <li class="list-item">1. Find some trash</li>
+          <label for="imageFile" class="list-item list-button">
+            <li class="flex flex-col items-start">
+              <div>2. Upload a picture</div>
+              <div class="text-lg">(Click Me!)</div>
+            </li>
+          </label>
+          <input class="hidden" type="file" id="imageFile" accept="image/*" />
+          <li class="list-item">3. Get a result</li>
+        </ol>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <img src="" id="displayimage" alt="" />
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
